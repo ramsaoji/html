@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -21,16 +22,16 @@
       <nav id="header-nav" class="navbar navbar-default">
         <div class="container">
           <div class="navbar-brand">
-            <h1>Aromatic Bar</h1>
+            <h1><a href="./index.html" target="_blank">Aromatic Bar</a></h1>
             <p>
               We are committed to providing you with the best dining experience
               possible, so we welcome your comments.
             </p>
           </div>
 
-          <div class="navbar-form">
+          <!-- <div class="navbar-form">
             <a href="./index.html" target="_blank">Form</a>
-          </div>
+          </div> -->
           <div class="navbar-table">
             <a href="./showData.html" target="_blank">Table</a>
           </div>
@@ -39,171 +40,173 @@
     </header>
     <!-- Heading -->
     <div id="all">
-      <div class="container">
-        <div id="body-head">Please provide your feedback below.</div>
-        <div id="main-content">
-          <div class="col-lg-4 col-md-6">
-            <div class="main">
-              <label for="FirName">Full Name*</label>
-              <input id="name" type="text" class="styl" />
+      <form>
+        <div class="container">
+          <div id="body-head">Please provide your feedback below.</div>
+          <div id="main-content">
+            <div class="col-lg-4 col-md-6">
+              <div class="main">
+                <label for="FirName">Full Name*</label>
+                <input id="name" type="text" class="styl" required />
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="main">
+                <label for="FirName">Email*</label>
+                <input id="mail" type="text" class="styl" required />
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+              <div class="main">
+                <label for="FirName">Phone*</label>
+                <input id="phno" type="text" class="styl" required />
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
-            <div class="main">
-              <label for="FirName">Email*</label>
-              <input id="mail" type="text" class="styl" />
-            </div>
+          <div class="radio1">
+            <h4 class="mt-2">
+              1.Please rate the quality of the service you received from your
+              host.
+            </h4>
+            <label class="radio-inline"
+              ><input type="radio" name="service1" value="bad" />Bad</label
+            >
+            <label class="radio-inline"
+              ><input type="radio" name="service1" value="fair" />Fair</label
+            >
+            <label class="radio-inline"
+              ><input type="radio" name="service1" value="good" />Good</label
+            >
+            <label class="radio-inline"
+              ><input
+                type="radio"
+                name="service1"
+                value="excellent"
+              />Excellent</label
+            >
           </div>
 
-          <div class="col-lg-4 col-md-12">
-            <div class="main">
-              <label for="FirName">Phone*</label>
-              <input id="phno" type="text" class="styl" />
-            </div>
+          <div class="radio2">
+            <h4 class="mt-2">
+              2.Please rate the quality of your beverage.
+            </h4>
+            <label class="radio-inline"
+              ><input type="radio" name="bvg" value="bad" />Bad</label
+            >
+            <label class="radio-inline"
+              ><input type="radio" name="bvg" value="fair" />Fair</label
+            >
+            <label class="radio-inline"
+              ><input type="radio" name="bvg" value="good" />Good</label
+            >
+            <label class="radio-inline"
+              ><input
+                type="radio"
+                name="bvg"
+                value="excellent"
+              />Excellent</label
+            >
           </div>
-        </div>
 
-        <div class="radio1">
-          <h4 class="mt-2">
-            1.Please rate the quality of the service you received from your
-            host.
-          </h4>
-          <label class="radio-inline"
-            ><input type="radio" name="service" value="bad" />Bad</label
-          >
-          <label class="radio-inline"
-            ><input type="radio" name="service" value="fair" />Fair</label
-          >
-          <label class="radio-inline"
-            ><input type="radio" name="service" value="good" />Good</label
-          >
-          <label class="radio-inline"
-            ><input
-              type="radio"
-              name="service"
-              value="excellent"
-            />Excellent</label
-          >
-        </div>
-
-        <div class="radio2">
-          <h4 class="mt-2">
-            2.Please rate the quality of your beverage.
-          </h4>
-          <label class="radio-inline"
-            ><input type="radio" name="service" value="bad" />Bad</label
-          >
-          <label class="radio-inline"
-            ><input type="radio" name="service" value="fair" />Fair</label
-          >
-          <label class="radio-inline"
-            ><input type="radio" name="service" value="good" />Good</label
-          >
-          <label class="radio-inline"
-            ><input
-              type="radio"
-              name="service"
-              value="excellent"
-            />Excellent</label
-          >
-        </div>
-
-        <div class="radio3">
+          <!-- <div class="radio3">
           <h4 class="mt-2">
             3.Please rate the quality of the service you received from your
             host.
           </h4>
           <label class="radio-inline"
-            ><input type="radio" name="service" value="bad" />Bad</label
+            ><input type="radio" name="service3" value="bad" />Bad</label
           >
           <label class="radio-inline"
-            ><input type="radio" name="service" value="fair" />Fair</label
+            ><input type="radio" name="service3" value="fair" />Fair</label
           >
           <label class="radio-inline"
-            ><input type="radio" name="service" value="good" />Good</label
-          >
-          <label class="radio-inline"
-            ><input
-              type="radio"
-              name="service"
-              value="excellent"
-            />Excellent</label
-          >
-        </div>
-
-        <div class="radio4">
-          <h4 class="mt-2">
-            4. Was our restaurant clean?
-          </h4>
-          <label class="radio-inline"
-            ><input type="radio" name="service" value="bad" />Bad</label
-          >
-          <label class="radio-inline"
-            ><input type="radio" name="service" value="fair" />Fair</label
-          >
-          <label class="radio-inline"
-            ><input type="radio" name="service" value="good" />Good</label
+            ><input type="radio" name="service3" value="good" />Good</label
           >
           <label class="radio-inline"
             ><input
               type="radio"
-              name="service"
+              name="service3"
               value="excellent"
             />Excellent</label
           >
-        </div>
+        </div> -->
 
-        <div class="radio5">
-          <h4 class="mt-2">
-            5. Please rate your overall dining experience.
-          </h4>
-          <label class="radio-inline"
-            ><input type="radio" name="service" value="bad" />Bad</label
-          >
-          <label class="radio-inline"
-            ><input type="radio" name="service" value="fair" />Fair</label
-          >
-          <label class="radio-inline"
-            ><input type="radio" name="service" value="good" />Good</label
-          >
-          <label class="radio-inline"
-            ><input
-              type="radio"
-              name="service"
-              value="excellent"
-            />Excellent</label
-          >
-        </div>
+          <div class="radio3">
+            <h4 class="mt-2">
+              3. Was our restaurant clean?
+            </h4>
+            <label class="radio-inline"
+              ><input type="radio" name="clean" value="bad" />Bad</label
+            >
+            <label class="radio-inline"
+              ><input type="radio" name="clean" value="fair" />Fair</label
+            >
+            <label class="radio-inline"
+              ><input type="radio" name="clean" value="good" />Good</label
+            >
+            <label class="radio-inline"
+              ><input
+                type="radio"
+                name="clean"
+                value="excellent"
+              />Excellent</label
+            >
+          </div>
 
-        <div class="msg">
-          <div class="main">
-            <label for="FirName">Message*</label>
-            <input
-              id="message"
-              type="text"
-              maxlength="100"
-              placeholder="Write your message here."
-              cols="48"
-              rows="5"
-              class="styl"
-            />
+          <div class="radio4">
+            <h4 class="mt-2">
+              4. Please rate your overall dining experience.
+            </h4>
+            <label class="radio-inline"
+              ><input type="radio" name="dine" value="bad" />Bad</label
+            >
+            <label class="radio-inline"
+              ><input type="radio" name="dine" value="fair" />Fair</label
+            >
+            <label class="radio-inline"
+              ><input type="radio" name="dine" value="good" />Good</label
+            >
+            <label class="radio-inline"
+              ><input
+                type="radio"
+                name="dine"
+                value="excellent"
+              />Excellent</label
+            >
+          </div>
+
+          <div class="msg">
+            <div class="main">
+              <label for="FirName">Message*</label>
+              <input
+                id="message"
+                type="text"
+                maxlength="100"
+                placeholder="Write your message here."
+                cols="48"
+                rows="5"
+                class="styl"
+                required
+              />
+            </div>
+          </div>
+          <div id="btn">
+            <button
+              class="btn btn-primary"
+              id="btn"
+              style="width: 10%; position: absolute;"
+            >
+              Submit
+            </button>
           </div>
         </div>
-        <div id="btn">
-          <button
-            class="btn btn-primary"
-            id="btn"
-            style="width: 10%; position: absolute;"
-          >
-            Submit
-          </button>
-        </div>
-      </div>
+      </form>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
     <script>
       $("input").on("focusin", function () {
         $(this).parent().find("label").addClass("active");
@@ -214,6 +217,63 @@
           $(this).parent().find("label").removeClass("active");
         }
       });
+    </script>
+    <script type="text/javascript">
+      //let customers = [];
+      let customers = JSON.parse(localStorage.getItem("MyCustList") || "[]");
+
+      const addCustomer = (e) => {
+        e.preventDefault();
+        if (
+          !e.target.closest("form").checkValidity() ||
+          !e.target.closest("form").reportValidity()
+        ) {
+          e.target.closest("form").checkValidity();
+          e.target.closest("form").reportValidity();
+          return;
+        }
+
+        const service = document.querySelector("input[name='service']:checked");
+        const bvg = document.querySelector("input[name='bvg']:checked");
+        const clean = document.querySelector("input[name='clean']:checked");
+        const dine = document.querySelector("input[name='dine']:checked");
+        const fname = document.querySelector("input[name='name']").value;
+        const mailId = document.querySelector("input[name='mail']").value;
+        const mobno = document.querySelector("input[name='phno']").value;
+
+        if (!(/^[a-zA-Z ]+$/.test(fname) || fname.length == 0)) {
+          alert("Enter valid name");
+        } else if (mailId.indexOf("@") <= 0 || mailId.indexOf("@") == "") {
+          alert("Invalid Email-Id-'Put @ at proper place'");
+        } else if (
+          mailId.charAt(mailId.length - 4) != "." &&
+          mailId.charAt(mailId.length - 3) != "."
+        ) {
+          alert("Invalid E-mail-'Check your Email-Id'! ");
+        } else if (!/^[7-9]\d{9}$/.test(mobno) && !(mobno.length == 10)) {
+          alert("Invalid mob no.");
+        } else {
+          let customer = {
+            name: document.querySelector("#name").value,
+            email: document.querySelector("#mail").value,
+            phone: document.querySelector("#phno").value,
+            message: document.querySelector("#msg").value,
+            serviceRating: service ? service.value : 1,
+            bvgRating: bvg ? bvg.value : 1,
+            cleanRating: clean ? clean.value : 1,
+            dineRating: dine ? dine.value : 1,
+          };
+          customers.push(customer);
+
+          console.warn("Thank You For your feedback");
+          alert("Thank you for completing the information");
+          document.forms[0].reset();
+          //saving to localStorage
+          localStorage.setItem("MyCustList", JSON.stringify(customers));
+        }
+      };
+
+      document.querySelector("#btn").addEventListener("click", addCustomer);
     </script>
   </body>
 </html>
