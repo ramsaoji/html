@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-brand">
+            <h1>Aromatic Bar</h1>
+            <p>
+              We are committed to providing you with the best dining experience
+              possible, so we welcome your comments.
+            </p>
+          </div>
+
+          <div class="navbar-form">
+            <a href="./index.html" target="_blank">Form</a>
+          </div>
+          <div class="navbar-table">
+            <a href="./showData.html" target="_blank">Table</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Heading -->
+    <div id="all">
+      <div class="container">
+        <div id="body-head">Please provide your feedback below.</div>
+        <div id="main-content">
+          <div class="col-lg-4 col-md-6">
+            <div class="main">
+              <label for="FirName">Full Name*</label>
+              <input id="name" type="text" class="styl" />
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="main">
+              <label for="FirName">Email*</label>
+              <input id="mail" type="text" class="styl" />
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+            <div class="main">
+              <label for="FirName">Phone*</label>
+              <input id="phno" type="text" class="styl" />
+            </div>
+          </div>
+        </div>
+
+        <div class="radio1">
+          <h4 class="mt-2">
+            1.Please rate the quality of the service you received from your
+            host.
+          </h4>
+          <label class="radio-inline"
+            ><input type="radio" name="service" value="bad" />Bad</label
+          >
+          <label class="radio-inline"
+            ><input type="radio" name="service" value="fair" />Fair</label
+          >
+          <label class="radio-inline"
+            ><input type="radio" name="service" value="good" />Good</label
+          >
+          <label class="radio-inline"
+            ><input
+              type="radio"
+              name="service"
+              value="excellent"
+            />Excellent</label
+          >
+        </div>
+
+        <div class="radio2">
+          <h4 class="mt-2">
+            2.Please rate the quality of your beverage.
+          </h4>
+          <label class="radio-inline"
+            ><input type="radio" name="service" value="bad" />Bad</label
+          >
+          <label class="radio-inline"
+            ><input type="radio" name="service" value="fair" />Fair</label
+          >
+          <label class="radio-inline"
+            ><input type="radio" name="service" value="good" />Good</label
+          >
+          <label class="radio-inline"
+            ><input
+              type="radio"
+              name="service"
+              value="excellent"
+            />Excellent</label
+          >
+        </div>
+
+        <div class="radio3">
+          <h4 class="mt-2">
+            3.Please rate the quality of the service you received from your
+            host.
+          </h4>
+          <label class="radio-inline"
+            ><input type="radio" name="service" value="bad" />Bad</label
+          >
+          <label class="radio-inline"
+            ><input type="radio" name="service" value="fair" />Fair</label
+          >
+          <label class="radio-inline"
+            ><input type="radio" name="service" value="good" />Good</label
+          >
+          <label class="radio-inline"
+            ><input
+              type="radio"
+              name="service"
+              value="excellent"
+            />Excellent</label
+          >
+        </div>
+
+        <div class="radio4">
+          <h4 class="mt-2">
+            4. Was our restaurant clean?
+          </h4>
+          <label class="radio-inline"
+            ><input type="radio" name="service" value="bad" />Bad</label
+          >
+          <label class="radio-inline"
+            ><input type="radio" name="service" value="fair" />Fair</label
+          >
+          <label class="radio-inline"
+            ><input type="radio" name="service" value="good" />Good</label
+          >
+          <label class="radio-inline"
+            ><input
+              type="radio"
+              name="service"
+              value="excellent"
+            />Excellent</label
+          >
+        </div>
+
+        <div class="radio5">
+          <h4 class="mt-2">
+            5. Please rate your overall dining experience.
+          </h4>
+          <label class="radio-inline"
+            ><input type="radio" name="service" value="bad" />Bad</label
+          >
+          <label class="radio-inline"
+            ><input type="radio" name="service" value="fair" />Fair</label
+          >
+          <label class="radio-inline"
+            ><input type="radio" name="service" value="good" />Good</label
+          >
+          <label class="radio-inline"
+            ><input
+              type="radio"
+              name="service"
+              value="excellent"
+            />Excellent</label
+          >
+        </div>
+
+        <div class="msg">
+          <div class="main">
+            <label for="FirName">Message*</label>
+            <input
+              id="message"
+              type="text"
+              maxlength="100"
+              placeholder="Write your message here."
+              cols="48"
+              rows="5"
+              class="styl"
+            />
+          </div>
+        </div>
+        <div id="btn">
+          <button
+            class="btn btn-primary"
+            id="btn"
+            style="width: 10%; position: absolute;"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script>
+      $("input").on("focusin", function () {
+        $(this).parent().find("label").addClass("active");
+      });
+
+      $("input").on("focusout", function () {
+        if (!this.value) {
+          $(this).parent().find("label").removeClass("active");
+        }
+      });
+    </script>
+  </body>
+</html>
