@@ -288,11 +288,18 @@ div.main div {
     margin-left: 15px;
     width: 100%;
   }
+  .msg1 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
   .msg1 input[type="text"] {
     width: 450px;
   }
   .col-sm-12 {
     margin-bottom: 20px;
+  }
+  .btn {
+    margin-top: 20px;
   }
 }
 
@@ -361,5 +368,11 @@ div.main div {
   }
   label.labelbox.active {
     font-size: 0.8em;
+  }
+  div.main.msg1 {
+    margin-top: 0px;
+  }
+  .btn {
+    margin-top: 20px;
   }
 }
