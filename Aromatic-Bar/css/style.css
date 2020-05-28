@@ -10,25 +10,34 @@ body {
   background-color: white;
 }
 .container {
+  border-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   margin-top: 5px;
   padding-bottom: 40px;
   background-image: linear-gradient(#1eb7ff, #2191c5);
   /* background-color: dodgerblue; */
   border: 2px solid #000;
-  box-shadow: 0px 0px 8px #000;
+  box-shadow: 1px 0px 5px #000;
 }
 #all form.container {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 0px;
   /* border: 2px solid #cc3083; */
   padding: 15px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 5px;
   /* background-color: #cc3083; */
-  box-shadow: 0px 0px 8px #000;
+  box-shadow: 1px 0px 5px #000;
 }
 /** HEADER **/
 #header-nav {
   background-color: #fff;
   border-radius: 0;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   border: 0;
   padding-bottom: 0px;
 }
@@ -64,6 +73,7 @@ body {
 }
 
 .navbar-table a {
+  border-radius: 3px;
   background-image: linear-gradient(#1eb7ff, #2191c5);
   box-shadow: 0px 0px 8px #000;
   border: 2px solid black;
@@ -123,6 +133,7 @@ label.labelbox.active {
   box-shadow: 0px 0px 8px #000;
   background-image: linear-gradient(#1eb7ff, #2191c5);
   padding-left: 3px;
+  border-radius: 3px;
   /* font-style: "Oxygen", sans-serif; */
   top: -25px;
   font-size: 18px;
@@ -141,6 +152,7 @@ input[type="text"] {
   height: 50px;
   padding: 10px;
   border: 1.5px solid black;
+  border-radius: 3px;
   box-shadow: 0px 0px 8px #000;
   font-size: 1.2em;
   font-weight: 800;
@@ -219,6 +231,7 @@ div.main div {
   background-image: linear-gradient(#1eb7ff, #2191c5);
   padding-left: 5px;
   top: -25px;
+  border-radius: 3px;
   font-size: 1.5em;
   font-weight: 300px;
   letter-spacing: 2px;
@@ -234,6 +247,7 @@ div.main div {
   height: 150px;
   width: 550px;
   padding: 10px;
+  border-radius: 3px;
   border: 1.5px solid black;
   font-size: 1.2em;
   font-weight: 800;
@@ -245,7 +259,14 @@ div.main div {
   outline: none;
 }
 .btn:hover {
+  border: 2px solid #000;
+  box-shadow: 0px 0px 3px #000;
   color: white;
+}
+.btn:focus {
+  border: 2px solid #000;
+  box-shadow: 0px 0px 3px #000;
+  background-image: linear-gradient(#1eb7ff, #2191c5);
 }
 .btn {
   color: #000;
