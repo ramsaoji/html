@@ -10,21 +10,14 @@ body {
   background-color: white;
 }
 .container {
-  border-radius: 5px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   /* margin-top: 5px; */
   padding-bottom: 40px;
-  background-image: linear-gradient(#1eb7ff, #2191c5);
+  background-image: linear-gradient(#8fd1fc, #79bfed);
   /* background-color: dodgerblue; */
   border: 2px solid #000;
   box-shadow: 1px 0px 5px #000;
 }
 #all form.container {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
   border-top: 0px;
   /* border: 2px solid #cc3083; */
   padding: 15px;
@@ -53,7 +46,7 @@ body {
   /* Form name */
   /* color: #000; */
   font-size: 2em;
-  text-shadow: 1px 1px 3px #000;
+  text-shadow: 1px 0px 2px #000;
   margin-top: 0px;
   margin-bottom: 0;
   line-height: 0.75;
@@ -74,7 +67,7 @@ body {
 
 .navbar-table a {
   border-radius: 3px;
-  background-image: linear-gradient(#1eb7ff, #2191c5);
+  background-image: linear-gradient(#8fd1fc, #79bfed);
   box-shadow: 0px 0px 8px #000;
   border: 2px solid black;
   width: 110px;
@@ -118,6 +111,7 @@ div.main div {
 label.labelbox {
   position: absolute;
   font-size: 20px;
+  text-shadow: 1px 0px 2px #000;
   margin: 10px;
   margin-left: 10px;
   width: auto;
@@ -131,12 +125,13 @@ label.labelbox {
 label.labelbox.active {
   border: 1.2px solid black;
   box-shadow: 0px 0px 8px #000;
-  background-image: linear-gradient(#1eb7ff, #2191c5);
+  background-image: linear-gradient(#8fd1fc, #79bfed);
   padding-left: 3px;
   border-radius: 3px;
+  text-shadow: 1px 0px 2px #000;
   /* font-style: "Oxygen", sans-serif; */
   top: -25px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -156,7 +151,7 @@ input[type="text"] {
   box-shadow: 0px 0px 8px #000;
   font-size: 1.2em;
   font-weight: 800;
-  background-image: linear-gradient(#1eb7ff, #2191c5);
+  background-image: linear-gradient(#8fd1fc, #79bfed);
   /* background-color: dodgerblue; */
   color: black;
 }
@@ -212,6 +207,7 @@ div.main div {
   margin: 0px 0;
 }
 .msg1 label.labelboxmsg {
+  text-shadow: 1px 0px 2px #000;
   position: absolute;
   top: 0;
   font-size: 1.5em;
@@ -226,9 +222,10 @@ div.main div {
 }
 
 .msg1 label.labelboxmsg.active {
+  text-shadow: 1px 0px 2px #000;
   border: 1.2px solid black;
   box-shadow: 0px 0px 8px #000;
-  background-image: linear-gradient(#1eb7ff, #2191c5);
+  background-image: linear-gradient(#8fd1fc, #79bfed);
   padding-left: 5px;
   top: -25px;
   border-radius: 3px;
@@ -251,7 +248,7 @@ div.main div {
   border: 1.5px solid black;
   font-size: 1.2em;
   font-weight: 800;
-  background-image: linear-gradient(#1eb7ff, #2191c5);
+  background-image: linear-gradient(#8fd1fc, #79bfed);
   color: black;
 }
 
@@ -266,7 +263,7 @@ div.main div {
 .btn:focus {
   border: 2px solid #000;
   box-shadow: 0px 0px 3px #000;
-  background-image: linear-gradient(#1eb7ff, #2191c5);
+  background-image: linear-gradient(#8fd1fc, #79bfed);
 }
 .btn {
   color: #000;
@@ -279,11 +276,11 @@ div.main div {
   width: 90px;
   height: 40px;
   font-size: 20px;
-  background-image: linear-gradient(#1eb7ff, #2191c5);
+  background-image: linear-gradient(#8fd1fc, #79bfed);
 }
 ::placeholder {
   font-size: 15px;
-  color: #cdcdcd;
+  color: #898989;
   opacity: 1; /* Firefox */
 }
 /********** Large devices only **********/
