@@ -4,7 +4,7 @@
 }
 
 body {
-  font-size: 16px;
+  font-size: 1.6em;
   color: #000;
   background-color: #fff;
 }
@@ -15,10 +15,9 @@ body {
   border: 2px solid #e2e5e5;
   box-shadow: 0px 0px 8px #000;
 }
-#all .container {
+#all form.container {
   border: 2px solid #e2e5e5;
-  padding-top: 0px;
-  padding-bottom: 140px;
+  padding: 15px;
   margin-bottom: 10px;
   background-color: #e2e5e5;
   box-shadow: 0px 0px 8px #000;
@@ -44,7 +43,7 @@ body {
   /* color: #000; */
   font-size: 2em;
   text-shadow: 1px 1px 3px #000;
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 0;
   line-height: 0.75;
 }
@@ -78,34 +77,11 @@ body {
   padding-top: 10px;
 }
 
-/* .navbar-form a:hover {
-  text-decoration: none;
-  background-color: white;
-  color: black;
-  text-shadow: 1px 1px 1px #000;
-}
-
-.navbar-form a {
-  border: 2px solid black;
-  width: 110px;
-  height: 40px;
-  text-shadow: 1px -1px 1px #000;
-  text-decoration: none;
-  text-align: center;
-  color: black;
-  float: right;
-  font-size: 1.5em;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 0.7;
-  padding-top: 10px;
-} */
 /** BODY hEAD **/
 #body-head {
-  position: absolute;
+  /* position: absolute; */
   text-decoration: underline;
-  padding-top: 0px;
-  padding-bottom: 50px;
+  margin-bottom: 25px;
   text-align: center;
   left: 500px;
   font-size: 25px;
@@ -113,37 +89,27 @@ body {
 }
 
 /** MAIN BODYYYYYYYYYYYYYYYYYYYYYY **/
-#main-content {
-  margin-top: 90px;
-  /* padding-right: 200px; */
-}
 
 div.main {
   box-shadow: 0px 0px 5px #e2e5e5;
   width: 350px;
-  position: absolute;
-  padding-top: 0px;
-  left: 180px;
-  transform: translate(-50%, -50%);
-  vertical-align: left;
+  /* transform: translate(-50%, -50%); */
+  /* vertical-align: left; */
 }
 
-label {
+label.labelbox {
   position: absolute;
-  top: 0;
   font-size: 20px;
   margin: 10px;
+  margin-left: 10px;
   width: auto;
   background-color: #e2e5e5;
   border-color: #e2e5e5;
   -webkit-transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
   transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
 }
-/* .active:focus{
-    border-color: #6adbff;
-    box-shadow: 0px 0px 8px #6adbff;
-} */
-.active {
+
+label.labelbox.active {
   border: 1.2px solid black;
   box-shadow: 0px 0px 8px #000;
   padding-left: 3px;
@@ -159,112 +125,67 @@ input[type="text"]:focus {
   box-shadow: 0px 0px 8px #000;
 }
 input[type="text"] {
-  font-style: "Oxygen", sans-serif;
-  text-transform: capitalize;
+  font-family: "Oxygen", sans-serif;
+  margin-left: 0px;
   width: 350px;
   height: 50px;
   padding: 10px;
   border: 1.5px solid black;
   box-shadow: 0px 0px 8px #e2e5e5;
-  font-size: 20px;
+  font-size: 1.2em;
   font-weight: 800;
   background-color: #e2e5e5;
   color: black;
 }
 
-/* input[type="text"]:focus {
-  outline: none; */
 .radio-inline {
-  margin: 5px 40px 20px 0px;
+  margin: 5px 40px 10px 0px;
   cursor: pointer;
   background-color: #e2e5e5;
 }
 
 .radio1 h4 {
-  padding-top: 10px;
-  font-size: 20px;
+  font-size: 1.2em;
   text-shadow: 1px 0px 1px grey;
 }
 .radio1 {
-  position: absolute;
-  font-size: 20px;
+  font-size: 1.1em;
   text-shadow: 1px 0px 1px grey;
-  margin-top: 30px;
-  left: 120px;
 }
 
 .radio2 h4 {
-  padding-top: 10px;
-  font-size: 20px;
+  font-size: 1.1em;
   text-shadow: 1px 0px 1px grey;
 }
 .radio2 {
-  position: absolute;
   text-shadow: 1px 0px 1px grey;
-  font-size: 20px;
-  margin-top: 110px;
-  left: 120px;
+  font-size: 1.2em;
 }
 
 .radio3 h4 {
-  padding-top: 10px;
-  font-size: 20px;
+  font-size: 1.1em;
   text-shadow: 1px 0px 1px grey;
 }
 .radio3 {
-  position: absolute;
   text-shadow: 1px 0px 1px grey;
-  font-size: 20px;
-  margin-top: 190px;
-  padding-bottom: 20px;
-  left: 120px;
+  font-size: 1.2em;
 }
 
 .radio4 h4 {
-  padding-top: 10px;
-  font-size: 20px;
+  font-size: 1.1em;
   text-shadow: 1px 0px 1px grey;
 }
 .radio4 {
-  position: absolute;
   text-shadow: 1px 0px 1px grey;
-  font-size: 20px;
-  margin-top: 270px;
-  /* padding-top: 340px; */
-  padding-bottom: 20px;
-  left: 120px;
+  font-size: 1.2em;
 }
 
-/* .radio5 h4 {
-  padding-top: 10px;
-  font-size: 20px;
-  text-shadow: 1px 0px 1px grey;
-}
-.radio5 {
+.msg1 label.labelboxmsg {
   position: absolute;
-  text-shadow: 1px 0px 1px grey;
-  font-size: 20px;
-  padding-top: 440px;
-  padding-bottom: 20px;
-  left: 120px;
-} */
-.msg {
-  margin-top: 550px;
-  /* padding-bottom: 30px; */
-}
-.msg div.main {
-  width: 550px;
-  position: absolute;
-  left: 390px;
-  transform: translate(-50%, -50%);
-  vertical-align: left;
-}
-
-.msg label {
-  position: absolute;
-  top: 0;
-  font-size: 25px;
+  /* top: 700; */
+  font-size: 1.5em;
   margin: 10px;
+  margin-top: 40px;
   padding: 0 10px;
   width: auto;
   background-color: #e2e5e5;
@@ -273,68 +194,140 @@ input[type="text"] {
   transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
 }
 
-.msg .active {
+.msg1 .labelboxmsg.active {
   border: 1.2px solid black;
   box-shadow: 0px 0px 8px #000;
   padding-left: 5px;
-  top: -25px;
-  font-size: 25px;
+  top: 310px;
+  font-size: 1.5em;
   font-weight: 300px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-.msg input[type="text"]:focus {
+.msg1 input[type="text"]:focus {
   border-color: #000;
   box-shadow: 0px 0px 8px #000;
 }
-.msg input[type="text"] {
+.msg1 input[type="text"] {
+  margin-top: 30px;
   height: 150px;
   width: 550px;
   padding: 10px;
   border: 1.5px solid black;
-  font-size: 20px;
+  font-size: 1.2em;
   font-weight: 800;
   background-color: #e2e5e5;
   color: black;
 }
 
-.msg input[type="text"]:focus {
+.msg1 input[type="text"]:focus {
   outline: none;
 }
 .btn {
-  margin-top: 90px;
-  margin-left: 6px;
-  width: 50px;
+  margin-top: 20px;
+  margin-left: 0px;
+  width: 90px;
   height: 40px;
   font-size: 20px;
 }
 /********** Large devices only **********/
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .col-lg-4 {
-    /* margin: 10px; */
-    float: left;
-    /* border: 10px solid white; */
-  }
-  .col-lg-4 {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
     width: 33.33%;
-  }
-  .col-lg-6 {
-    float: left;
-    width: 50%;
   }
 }
 
 /********** Medium devices only **********/
-@media (min-width: 767px) and (max-width: 991px) {
-  .col-md-6,
-  .col-md-12 {
-    float: left;
-    border: 10px solid white;
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .navbar-table a {
+        position: absolute;
+        margin-top: 10px;
+        margin-right: 120px;
+    }
+    .container{
+        padding-bottom: 50px;
+    }
+  #body-head {
+    margin-left: 15px;
+    text-align: left;
   }
-  .col-md-6 {
-    width: 50%;
+  .msg1 input[type="text"] {
+    width: 450px;
   }
-  .col-md-12 {
+  .col-sm-12 {
+    margin-bottom: 10px;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .navbar-table a {
+        position: absolute;
+        margin-top: 10px;
+        margin-left: -120px;
+    }
+    .container{
+        padding-bottom: 45px;
+    }
+  #body-head {
+    text-align: left;
+    margin-left: 15px;
     width: 100%;
   }
+  .msg1 input[type="text"] {
+    width: 450px;
+  }
+  .col-sm-12 {
+    margin-bottom: 10px;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+    input[type="text"] {
+        width: 250px;
+      }
+#all .container{
+    margin-bottom: 10px;
+}
+.container{
+    padding-bottom: 70px;
+}
+.navbar-table a {
+    font-size: 1.2em;
+    width: 70px;
+    height: 35px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -90px;
+}
+.navbar-brand h1{
+    font-size: 1.5em;
+}
+.navbar-brand p{
+    padding-top: 10px;
+    font-size: .8em;
+}
+  #body-head {
+    margin-left: 15px;
+    text-align: left;
+    font-size: 1.4em;
+  }
+  .msg1 input[type="text"] {
+    width: 16em;
+    height: 8em;
+  }
+  .msg1 .labelboxmsg.active{
+      top:22.5em;
+  }
+  .col-sm-12 {
+    margin-bottom: 20px;
+  }
+}
 }
