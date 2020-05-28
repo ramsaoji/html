@@ -189,7 +189,7 @@ div.main.msg1 {
 }
 div.main div {
   position: relative;
-  margin: 40px 0;
+  margin: 0px 0;
 }
 .msg1 label.labelboxmsg {
   position: absolute;
@@ -248,6 +248,10 @@ div.main div {
     margin: 0px;
     margin-bottom: 30px;
     width: 33.33%;
+  }
+  div.msg1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -368,9 +372,6 @@ div.main div {
   }
   label.labelbox.active {
     font-size: 0.8em;
-  }
-  div.main.msg1 {
-    margin-top: 0px;
   }
   .btn {
     margin-top: 20px;
