@@ -5,7 +5,7 @@ body {
   font-size: 16px;
   color: #000;
   background-color: #fff;
-  font-family: Comic Sans Ms;
+  font-family: "Comic Sans MS", sans-serif;
 }
 
 /** HEADER **/
