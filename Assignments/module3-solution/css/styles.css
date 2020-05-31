@@ -78,7 +78,7 @@ p {
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   .jumbotron {
-    margin: 0 100px;
+    margin: 0 50px;
     margin-bottom: 20px;
   }
 }
